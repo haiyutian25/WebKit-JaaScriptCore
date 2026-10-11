@@ -1,0 +1,23 @@
+# 统一换行：仓库内一律 LF（设备端 .sh / 生成器脚本必须是 LF）
+* text=auto eol=lf
+
+# Windows 专用脚本保留 CRLF
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# 二进制（避免被当成文本处理）
+*.png binary
+*.jpg binary
+*.webp binary
+*.jar binary
+*.apk binary
+*.so binary
+*.a binary
+*.o binary
+*.gz binary
+*.zip binary
+
+# 补丁与文档按文本处理
+*.patch text eol=lf
+*.md text eol=lf
